@@ -63,8 +63,10 @@ class _MyCustomFormState extends State<MyCustomForm> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const ImageSection(
-                  image: 'images/tak.jpg',
+                const Expanded(
+                  child: ImageSection(
+                    image: 'images/tak.jpg',
+                  ),
                 ),
                 const ButtonSection(),
                 TextFormField(
